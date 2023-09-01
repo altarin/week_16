@@ -1,0 +1,66 @@
+
+header{
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+.form_registration{
+    width: 470px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 1.8em;
+}
+.form_data input{
+    text-align: center;
+    width: 100%;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    background-color: #f1f3f8;
+    border: 0;
+    margin-bottom: 20px;
+}
+.form_agreement .accept_checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.account .button_reg {
+    font-size: 1.1em;
+    width: 100%;
+}
+.button {
+    width: 470px;
+    height: 55px;
+    font-size: 20px;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    height: 2.8em;
+    padding: 0.3em 0.9em;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #ff8429;
+    height: 3em;
+    line-height: 2em;
+}
+#errorMessage {
+    color:red;
+}
+.choise{
+    color:#6E6E6E;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    background-color: #f1f3f8;
+    border: 0;
+    margin-bottom: 20px;
+    padding-top: 18px;
+}

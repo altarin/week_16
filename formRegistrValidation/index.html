@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <span>Главная</span>
+        <span>*</span>
+        <span>Регистрация</span>
+    </header>
+    <form novalidate>
+        <div class="form_registration">
+            <h2>Личные данные</h2>
+            <!-- имя -->
+            <div class="form_data">
+                <input type="text" name="firstname" value="" placeholder="Имя, Фамилия" id="input-firstname" required
+                    minlength="2" maxlength="20">
+            </div>
+
+            <!-- email -->
+            <div class="form_data">
+                <input type="email" name="email" value="" placeholder="E-mail" id="input-email">
+            </div>
+
+            <!-- возраст -->
+            <div class="form_data">
+                <input type="age" name="age" value="" placeholder="Возраст" id="input-age">
+            </div>
+
+            <!-- пол -->
+            <div class="choise">
+                <label>Выберите пол:</label>
+                <input type="radio" id="male" name="male" value="male" checked />
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="female" value="female" />
+                <label for="female">Женский</label>
+            </div>
+
+            <!-- профессия -->
+            <div class="choise">
+                <label>Выберите профессию:</label>
+                <select name="profession" size="1" required>
+                    <option value="Programmer," selected="selected">Программист</option>
+                    <option value="Doctor">Врач</option>
+                    <option value="Teacher">Учитель</option>
+                    <option value="Designer,">Дизайнер</option>
+                    <option value="Engineer,">Инженер</option>
+                    <option value="Salesman">Продавец</option>
+                    <option value="Other">Другое</option>
+                </select>
+            </div>
+
+            <!-- пароль -->
+            <h2>Придумайте пароль</h2>
+            <div class="form_data">
+                <input type="password" name="password" value="" placeholder="Пароль" id="input-password" required>
+            </div>
+
+            <!-- повторный пароль -->
+            <div class="form_data">
+                <input type="password" name="confirm" value="" placeholder="Повторите пароль" id="input-confirm"
+                    required>
+            </div>
+
+            <div class="form-btn">
+                <button type="button" onclick="checkAll()" class="button button_reg">Зарегистрироваться</button>
+            </div>
+
+            <div id="errorMessage"></div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
