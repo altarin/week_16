@@ -122,7 +122,8 @@ document.querySelector('.b-8').onclick = makeEight;
 const paragraphNine = document.getElementById('practicum9');
 
 function makeNine() {
-	//Ваш код
+		const thirtForm = document.forms[2].name;
+		
 }
 
 document.querySelector('.b-9').onclick = makeNine;
